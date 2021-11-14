@@ -7,7 +7,6 @@
     <param name="robot_model" value="CREATE_2" />
   </node> -->
 
-  
   <include file="$(find rplidar_ros)/launch/rplidar.launch" />
 
   <!-- Robot description -->
