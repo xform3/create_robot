@@ -4,10 +4,14 @@
   <arg name="desc" default="true" />
 
   <node name="create_driver" pkg="create_driver" type="create_driver" output="screen">
-    <rosparam command="load" file="$(arg config)" />
     <param name="robot_model" value="CREATE_2" />
   </node>
 
+  
+  <include file="$(find rplidar_ros)/launch/rplidar_a3.launch" />
+
   <!-- Robot description -->
   <include if="$(arg desc)" file="$(find create_description)/launch/create_2.launch" />
+
+  <rosparam command="load" file="$(arg config)" />
 </launch>
