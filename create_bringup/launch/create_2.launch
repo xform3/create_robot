@@ -3,9 +3,9 @@
   <arg name="config" default="$(find create_bringup)/config/default.yaml" />
   <arg name="desc" default="true" />
 
-  <!-- <node name="create_driver" pkg="create_driver" type="create_driver" output="screen">
+  <node name="create_driver" pkg="create_driver" type="create_driver" output="screen">
     <param name="robot_model" value="CREATE_2" />
-  </node> -->
+  </node>
 
   <include file="$(find rplidar_ros)/launch/rplidar.launch" />
 
